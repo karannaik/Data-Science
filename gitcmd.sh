@@ -1,6 +1,7 @@
 #!/bin/sh
 git add .
-git commit -am "made changes"
+read -p "Enter Comment: "  comment
+git commit -m "$comment"
 git push
 echo Press Enter...
 read
